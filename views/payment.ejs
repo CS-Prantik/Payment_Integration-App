@@ -1,0 +1,15 @@
+<%- include("include/header") %>  
+    <h3>Welcome to Payment Gateway</h3>
+    <form action="payment" method="POST">
+       <script
+          src="//checkout.stripe.com/v2/checkout.js"
+          class="stripe-button"
+          data-key="<%= key %>"
+          data-amount="2500"
+          data-currency="inr"
+          data-name="Prantik De"
+          data-description="Web Project"
+          data-locale="auto" >
+        </script>
+    </form>
+    <%- include("include/footer") %>  
